@@ -24,3 +24,7 @@ Responsive Book Website Design Using HTML CSS & JavaScript.
 ## Accessibility
 
 [Live Template](https://pouria-nayeb-aboulghasem.github.io/cactus-website-template/)
+
+## Copyright
+
+Bedimcode
