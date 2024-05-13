@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+
+:root {
+    --header-height: 3.5rem;
+
+    --primary-color: hsl(93, 54%, 54%);
+    --primary-color-alt: hsl(93, 50%, 48%);
+    --primary-color-light: hsl(93, 58%, 66%);
+    --title-color: hsl(228, 8%, 98%);
+    --text-color: hsl(228, 8%, 70%);
+    --white-color: hsl(228, 8%, 98%);
+    --black-color: hsl(228, 6%, 4%);
+    --body-color: hsl(228, 6%, 8%);
+    --container-color: hsl(228, 6%, 12%);
+    --shadow-img: 0 0 48px hsla(93, 54%, 54%, .4);
+    --gradient-card: linear-gradient(180deg, hsla(93, 8%, 8%), hsla(93, 40%, 30%));
+
+    --ff-montserrat: "Montserrat", sans-serif;
+
+    --fs-xxxl: 2.25rem;
+    --fs-xxl: 1.5rem;
+    --fs-xl: 1.25rem;
+    --fs-lg: 1rem;
+    --fs-md: 0.938rem;
+    --fs-sm: 0.813rem;
+
+    --fw-regular: 400;
+    --fw-medium: 500;
+    --fw-semibold: 600;
+    --fw-bold: 700;
+
+    --space-1: 0.5rem;
+    --space-2: 1rem;
+    --space-3: 1.5rem;
+    --space-4: 2rem;
+    --space-5: 2.5rem;
+    --space-6: 3rem;
+    --space-7: 3.5rem;
+    --space-8: 4rem;
+    --space-9: 4.5rem;
+    --space-10: 5rem;
+
+    --zi-soft: 10;
+    --zi-hard: 100;
+}
+
+@media screen and (min-width: 1150px) {
+    :root {
+        --fs-xxxl: 4.25rem;
+        --fs-xxl: 2.25rem;
+        --fs-xl: 1.5rem;
+        --fs-lg: 1.25rem;
+        --fs-md: 1rem;
+        --fs-sm: 0.875rem;
+    }
+}

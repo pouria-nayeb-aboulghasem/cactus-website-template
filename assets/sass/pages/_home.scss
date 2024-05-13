@@ -1,0 +1,220 @@
+.hero {
+    &__content {
+        padding-top: var(--space-5);
+        row-gap: var(--space-4);
+    }
+
+    &__figure {
+        justify-self: center;
+        width: 270px;
+        filter: drop-shadow(var(--shadow-img));
+    }
+
+    &__data {
+        text-align: center;
+    }
+
+    &__title {
+        font-size: var(--fs-xxxl);
+        font-weight: var(--fw-bold);
+        margin-bottom: var(--space-2);
+
+        & span {
+            color: var(--primary-color);
+        }
+    }
+
+    &__description {
+        margin-bottom: var(--space-6);
+    }
+
+    &__location {
+        margin-top: var(--space-4);
+        font-size: var(--fs-sm);
+    }
+
+    &__actions {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: var(--space-2);
+    }
+}
+
+.new {
+    &__content {
+        row-gap: 7.5rem;
+    }
+
+    &__header {
+        text-align: center;
+    }
+
+    &__list {
+        row-gap: 6rem;
+    }
+
+    &__item {
+        position: relative;
+        width: 200px;
+        background-image: var(--gradient-card);
+        padding: 9rem 0.75rem var(--space-1) 0.75rem;
+        border: 2px solid var(--primary-color-light);
+        border-radius: 1.5rem;
+        transition: transform 0.4s;
+
+        &:nth-child(odd) {
+            rotate: -5deg;
+        }
+
+        &:nth-child(even) {
+            justify-self: flex-end;
+            rotate: 5deg;
+        }
+
+        &:hover .new__img {
+            transform: translateY(-0.5rem);
+        }
+    }
+
+    &__img {
+        position: absolute;
+        top: -4.5rem;
+        left: 0;
+        right: 0;
+        width: 180px;
+        margin: 0 auto;
+        transition: transform 0.4s;
+        z-index: var(--zi-soft);
+    }
+
+    &__title {
+        font-size: var(--fs-xl);
+        text-align: center;
+    }
+}
+
+.shop {
+    &__content {
+        padding-top: 6.5rem;
+    }
+
+    &__list {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 6rem var(--space-2);
+    }
+
+    &__item {
+        position: relative;
+        background: var(--gradient-card);
+        padding: 5.75rem 0.75rem 1.25rem 0.75rem;
+        border: 2px solid var(--primary-color-light);
+        border-radius: 1rem;
+    }
+
+    &__img {
+        position: absolute;
+        top: -4.5rem;
+        left: 0;
+        right: 0;
+        width: 130px;
+        margin: 0 auto;
+        transition: transform 0.4s;
+
+        &:hover .shop__img {
+            transform: translateY(-0.5rem);
+        }
+    }
+
+    &__title {
+        font-size: var(--fs-sm);
+        font-weight: var(--fw-semibold);
+        margin-bottom: var(--space-1);
+    }
+
+    &__price {
+        color: var(--title-color);
+        font-weight: var(--fw-semibold);
+    }
+
+    &__button {
+        position: absolute;
+        right: 0.75rem;
+        bottom: 0.75rem;
+        outline: none;
+        border: none;
+        background-color: var(--white-color);
+        color: var(--black-color);
+        padding: 6px;
+        border-radius: 50%;
+        font-size: 1.25rem;
+        display: grid;
+        cursor: pointer;
+    }
+}
+
+.care {
+    &__content {
+        padding-top: var(--space-4);
+        row-gap: var(--space-4);
+    }
+
+    &__img {
+        width: 270px;
+        filter: drop-shadow(var(--shadow-img));
+        justify-self: center;
+    }
+
+    &__list {
+        row-gap: var(--space-2);
+    }
+
+    &__item {
+        display: flex;
+        column-gap: var(--space-1);
+        align-items: flex-start;
+
+        & i {
+            font-size: 1.5rem;
+            color: var(--primary-color);
+        }
+    }
+}
+
+.contact {
+    &__content {
+        padding-top: var(--space-4);
+        row-gap: var(--space-4);
+    }
+
+    &__img {
+        width: 270px;
+        filter: drop-shadow(var(--shadow-img));
+        justify-self: center;
+    }
+
+    &__data {
+        row-gap: var(--space-4);
+        text-align: center;
+    }
+
+    &__title {
+        font-size: var(--fs-xl);
+        margin-bottom: var(--space-1);
+    }
+
+    &__social {
+        display: flex;
+        justify-content: center;
+        column-gap: var(--space-3);
+
+        & a {
+            color: var(--primary-color);
+            font-size: 1.5rem;
+        }
+    }
+
+    &__info {
+        font-style: normal;
+    }
+}

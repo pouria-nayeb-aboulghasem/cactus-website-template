@@ -1,0 +1,88 @@
+.nav {
+    position: relative;
+    display: flex;
+    height: var(--header-height);
+    align-items: center;
+    justify-content: space-between;
+
+    &__logo,
+    &__close,
+    &__show {
+        color: var(--title-color);
+        cursor: pointer;
+    }
+
+    &__logo {
+        font-weight: var(--fw-semibold);
+        column-gap: 0.25rem;
+        align-items: center;
+
+        & i {
+            color: var(--primary-color);
+            font-size: 1.25rem;
+            font-weight: initial;
+        }
+    }
+
+    &__actions {
+        display: flex;
+        font-size: 1.25rem;
+        column-gap: var(--space-2);
+        align-items: center;
+
+        & a,
+        & .nav__show {
+            color: var(--title-color);
+            cursor: pointer;
+        }
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        row-gap: var(--space-6);
+    }
+
+    &__link {
+        color: var(--title-color);
+        font-weight: var(--fw-semibold);
+        transition: color 0.4s;
+
+        &--active {
+            color: var(--primary-color);
+        }
+
+        &:hover {
+            color: var(--primary-color);
+        }
+    }
+
+    &__close {
+        position: absolute;
+        top: 1.5rem;
+        right: var(--space-3);
+        font-size: 1.25rem;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .nav {
+        &__menu {
+            position: fixed;
+            top: 0;
+            right: -100%;
+            width: 80%;
+            height: 100%;
+            background-color: hsla(228, 24%, 6%, 0.2);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            padding: 6rem var(--space-6) 0;
+            transition: right 0.4s;
+            z-index: var(--zi-hard);
+
+            &--show {
+                right: 0;
+            }
+        }
+    }
+}

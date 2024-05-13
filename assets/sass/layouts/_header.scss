@@ -1,0 +1,20 @@
+.header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    z-index: var(--zi-hard);
+
+    &-blur::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 1000%;
+        height: 100%;
+        background-color: hsla(228, 24%, 6%, 0.2);
+        backdrop-filter: blur(16px);
+        z-index: -1;
+    }
+}

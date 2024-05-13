@@ -1,0 +1,12 @@
+::-webkit-scrollbar {
+    width: 0.6rem;
+    background-color: hsl(228, 4%, 15%);
+
+    &-thumb {
+        background-color: hsl(228, 4%, 25%);
+
+        &:hover {
+            background-color: hsl(228, 4%, 35%);
+        }
+    }
+}
